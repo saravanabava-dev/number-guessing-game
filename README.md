@@ -70,10 +70,10 @@ git clone https://github.com/your-username/number-guessing-game.git
 
 ## 🌐 Live Demo
 
-🔗 Add your deployed project link here:
+
 
 ```bash
-[https://your-live-demo-link.com](https://neocities.org/site_files/text_editor?filename=NumderGuessing.html)
+https://saravanabava2704.neocities.org/
 ```
 
 ---
