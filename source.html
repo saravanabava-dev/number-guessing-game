@@ -1,0 +1,62 @@
+
+
+<div>
+<center>
+<h1>Guess the Number</h1>
+<input id="guessnumber" type="number" placeholder="Enter the Number">
+<button onclick="perform()" style="background-color:grey;color: white;">check</button>
+<P id="output">Result</P>
+<P id="score">Score : 10</P>
+</center>
+</div>
+<script>
+var guessnumber=document.getElementById("guessnumber")
+var result=document.getElementById("output")
+var score=document.getElementById("score")
+var Random=Math.floor(Math.random()*10+1)
+var totalscore=10
+function perform(){
+    var entered=guessnumber.value
+    if(entered==Random){
+        result.textContent="Result : Correct"
+        alert("..you won..")
+        
+    }
+    else
+    {
+        result.textContent="Result : Wrong"
+        totalscore=totalscore-1
+        score.textContent="Score : "+totalscore
+    }
+     if(totalscore<=0){
+score.textContent="not more chance"
+    }
+}
+
+</script>
+<style>
+    h1{
+        color: red;
+    
+    }
+    div{
+        background-color: black;
+        height: 40%;
+        width: 40%;
+        margin-top: 10%;
+        margin-right: 15px;
+        margin-left: 28%;
+        margin-bottom: 15px;
+        border-color:blue;
+        borber-width: 10px;
+border-style:solid;
+font-size:larger;
+text-align: center;
+    }
+    p{
+        color: white;
+    }
+    
+    
+    
+</style>
